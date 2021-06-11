@@ -1,6 +1,6 @@
 import express, { Application } from 'express';
 import { middleware } from './api/middleware/middleware';
-import { connection } from './config/dbConfig';
+import { connection } from './config/database';
 import { logger } from './config/logger'
 
 
@@ -13,7 +13,7 @@ const main = async () => {
     middleware(app, express);
 
     app.listen(PORT, () => console.log(`Server is running on http://localhost:${PORT}`) );
-    //await connection;
+    await connection;
 };
 
 main().catch( err => logger.error(err.stack));
