@@ -1,13 +1,12 @@
 import { Router } from 'express';
-import { default_page, getAllCandidates, addNewCandidate } from '../controllers/candidates';
+import { getAllCandidates, addNewCandidate } from '../controllers/candidates';
+import { validateJwt } from '../helpers/helpers';
 
-export const routes: Router = Router();
+export const candidates: Router = Router();
 
 
+candidates.route('/candidates')
+    .get(validateJwt, getAllCandidates)
+    .post(validateJwt, addNewCandidate);
 
-routes.get('/', default_page);
-
-routes.route('/candidates')
-    .get(getAllCandidates)
-    .post(addNewCandidate);
 
