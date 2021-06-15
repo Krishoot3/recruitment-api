@@ -44,3 +44,97 @@ error: Jun-14-2021 15:13:12: 	RepositoryNotFoundError: No repository for "Candid
     at Object.next (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:14:53)
     at C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:8:71
     at new Promise (<anonymous>)
+error: Jun-15-2021 11:30:36: 	Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+error: Jun-15-2021 11:31:13: 	RepositoryNotFoundError: No repository for "Candidates" was found. Looks like this entity is not registered in current "default" connection?
+    at new RepositoryNotFoundError (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\error\RepositoryNotFoundError.ts:11:9)
+    at EntityManager.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\entity-manager\EntityManager.ts:925:19)
+    at Connection.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\connection\Connection.ts:346:29)
+    at Function.BaseEntity.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\repository\BaseEntity.ts:100:27)
+    at Function.BaseEntity.find (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\repository\BaseEntity.ts:292:30)
+    at C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:8:63
+    at step (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:33:23)
+    at Object.next (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:14:53)
+    at C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:8:71
+    at new Promise (<anonymous>)
+error: Jun-15-2021 11:32:43: 	RepositoryNotFoundError: No repository for "Candidates" was found. Looks like this entity is not registered in current "default" connection?
+    at new RepositoryNotFoundError (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\error\RepositoryNotFoundError.ts:11:9)
+    at EntityManager.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\entity-manager\EntityManager.ts:925:19)
+    at Connection.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\connection\Connection.ts:346:29)
+    at Function.BaseEntity.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\repository\BaseEntity.ts:100:27)
+    at Function.BaseEntity.insert (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\repository\BaseEntity.ts:238:30)
+    at C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:24:49
+    at step (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:33:23)
+    at Object.next (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:14:53)
+    at C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:8:71
+    at new Promise (<anonymous>)
+error: Jun-15-2021 11:48:24: 	Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+error: Jun-15-2021 11:48:27: 	RepositoryNotFoundError: No repository for "Candidates" was found. Looks like this entity is not registered in current "default" connection?
+    at new RepositoryNotFoundError (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\error\RepositoryNotFoundError.ts:11:9)
+    at EntityManager.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\entity-manager\EntityManager.ts:925:19)
+    at Connection.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\connection\Connection.ts:346:29)
+    at Function.BaseEntity.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\repository\BaseEntity.ts:100:27)
+    at Function.BaseEntity.insert (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\repository\BaseEntity.ts:238:30)
+    at C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:24:49
+    at step (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:33:23)
+    at Object.next (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:14:53)
+    at C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:8:71
+    at new Promise (<anonymous>)
+error: Jun-15-2021 11:48:54: 	RepositoryNotFoundError: No repository for "Candidates" was found. Looks like this entity is not registered in current "default" connection?
+    at new RepositoryNotFoundError (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\error\RepositoryNotFoundError.ts:11:9)
+    at EntityManager.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\entity-manager\EntityManager.ts:925:19)
+    at Connection.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\connection\Connection.ts:346:29)
+    at Function.BaseEntity.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\repository\BaseEntity.ts:100:27)
+    at Function.BaseEntity.insert (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\repository\BaseEntity.ts:238:30)
+    at C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:24:49
+    at step (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:33:23)
+    at Object.next (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:14:53)
+    at C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:8:71
+    at new Promise (<anonymous>)
+error: Jun-15-2021 11:49:01: 	RepositoryNotFoundError: No repository for "Candidates" was found. Looks like this entity is not registered in current "default" connection?
+    at new RepositoryNotFoundError (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\error\RepositoryNotFoundError.ts:11:9)
+    at EntityManager.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\entity-manager\EntityManager.ts:925:19)
+    at Connection.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\connection\Connection.ts:346:29)
+    at Function.BaseEntity.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\repository\BaseEntity.ts:100:27)
+    at Function.BaseEntity.find (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\repository\BaseEntity.ts:292:30)
+    at C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:8:63
+    at step (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:33:23)
+    at Object.next (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:14:53)
+    at C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:8:71
+    at new Promise (<anonymous>)
+error: Jun-15-2021 12:17:24: 	Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+error: Jun-15-2021 12:17:51: 	RepositoryNotFoundError: No repository for "Candidates" was found. Looks like this entity is not registered in current "default" connection?
+    at new RepositoryNotFoundError (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\error\RepositoryNotFoundError.ts:11:9)
+    at EntityManager.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\entity-manager\EntityManager.ts:925:19)
+    at Connection.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\connection\Connection.ts:346:29)
+    at Function.BaseEntity.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\repository\BaseEntity.ts:100:27)
+    at Function.BaseEntity.find (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\repository\BaseEntity.ts:292:30)
+    at C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:8:63
+    at step (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:33:23)
+    at Object.next (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:14:53)
+    at C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:8:71
+    at new Promise (<anonymous>)
+error: Jun-15-2021 12:17:58: 	RepositoryNotFoundError: No repository for "Candidates" was found. Looks like this entity is not registered in current "default" connection?
+    at new RepositoryNotFoundError (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\error\RepositoryNotFoundError.ts:11:9)
+    at EntityManager.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\entity-manager\EntityManager.ts:925:19)
+    at Connection.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\connection\Connection.ts:346:29)
+    at Function.BaseEntity.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\repository\BaseEntity.ts:100:27)
+    at Function.BaseEntity.insert (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\repository\BaseEntity.ts:238:30)
+    at C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:24:49
+    at step (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:33:23)
+    at Object.next (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:14:53)
+    at C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:8:71
+    at new Promise (<anonymous>)
+error: Jun-15-2021 12:18:08: 	RepositoryNotFoundError: No repository for "Candidates" was found. Looks like this entity is not registered in current "default" connection?
+    at new RepositoryNotFoundError (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\error\RepositoryNotFoundError.ts:11:9)
+    at EntityManager.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\entity-manager\EntityManager.ts:925:19)
+    at Connection.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\connection\Connection.ts:346:29)
+    at Function.BaseEntity.getRepository (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\repository\BaseEntity.ts:100:27)
+    at Function.BaseEntity.insert (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\repository\BaseEntity.ts:238:30)
+    at C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:24:49
+    at step (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:33:23)
+    at Object.next (C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:14:53)
+    at C:\Users\Mato\Documents\Visual Studio Code\recruitment-api\server\src\api\controllers\candidates.ts:8:71
+    at new Promise (<anonymous>)

@@ -1,7 +1,7 @@
 import { Response, Request } from 'express';
 import { logger } from '../../config/logger';
 import { Candidates } from '../../entities/candidates';
-import  { ICandidates } from '../helpers/interfaces';
+import  { IAddCandidates, ICandidates } from '../helpers/interfaces';
 
 export const getAllCandidates = async (req: Request, res: Response) => {
     try {
@@ -20,7 +20,7 @@ export const getAllCandidates = async (req: Request, res: Response) => {
 
 export const addNewCandidate = async (req: Request, res: Response) => {
    try {
-       const newCandidate: ICandidates = req.body;
+       const newCandidate: IAddCandidates = req.body;
        const insertCandidate = await Candidates.insert(newCandidate);
        res.status(201).send({ message: "Candidate added" });
    } catch (e) {

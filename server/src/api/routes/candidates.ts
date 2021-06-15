@@ -1,12 +1,15 @@
 import { Router } from 'express';
 import { getAllCandidates, addNewCandidate } from '../controllers/candidates';
-import { validateJwt } from '../helpers/helpers';
+import { dataValidation } from '../validators/validation';
+import { candidateSchema } from '../validators/schemas';
+import { validateJwt } from '../validators/jwt';
+
 
 export const candidates: Router = Router();
 
 
 candidates.route('/candidates')
     .get(validateJwt, getAllCandidates)
-    .post(validateJwt, addNewCandidate);
+    .post(dataValidation(candidateSchema), validateJwt, addNewCandidate);
 
 
