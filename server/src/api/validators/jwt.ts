@@ -1,17 +1,14 @@
 import { Request, Response, NextFunction } from 'express';
-import { jwtValidation } from '../helpers/helpers';
+import jwt from 'jsonwebtoken';
 
 export const validateJwt = (req: Request, res: Response, next: NextFunction) => {
     let authHeader: string = req.headers.authorization!;
 
     try {
-        if (authHeader.startsWith('Bearer')) {
-                const token: string = authHeader.split(' ')[1];
-                jwtValidation(res, next, token);
-        } else {
-            res.status(401).send({ message: "Authorization not supported" });
-        }
+        const token: string = authHeader.split(' ')[1];
+        jwt.verify(token, 'secret123');
+        next();
     } catch (e) {
-        res.status(500).send({ message: "Something went wrong" });
+        res.status(401).send({ message: "Invalid token" });
     }
 } 

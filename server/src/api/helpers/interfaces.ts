@@ -1,5 +1,3 @@
-
-
 export interface ICandidates {
     id: number;
     fullName: string;

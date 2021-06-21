@@ -8,6 +8,6 @@ export const unprotected: Router = Router();
 
 unprotected.get('/', default_page);
 
-unprotected.post('/login', dataValidation(usersSchema), userLogin);
+unprotected.get('/login', userLogin);
 
 unprotected.post('/register', dataValidation(usersSchema), userRegister);

@@ -1,7 +1,6 @@
 import { Response, Request } from 'express';
 import { Users } from '../../entities/users';
 import bcrypt from 'bcrypt';
-import { logger } from '../../config/logger';
 import jwt from "jsonwebtoken";
 
 export const default_page = async (req: Request, res: Response) => {
@@ -9,9 +8,11 @@ export const default_page = async (req: Request, res: Response) => {
 };
 
 export const userLogin = async (req: Request, res: Response) => {
-    const { email , password } = req.body;
-
     try {
+        const base64Cr: string = req.headers.authorization!.split(' ')[1];
+        const credentials: string = Buffer.from(base64Cr, 'base64').toString('ascii');
+        const [email, password] = credentials.split(':');
+
         const account = await Users.findOne({ email });
 
         if (!account || !bcrypt.compareSync(password, account.password)) {
@@ -23,10 +24,8 @@ export const userLogin = async (req: Request, res: Response) => {
               
             res.status(200).send({ token: token });
         }   
-        
     } catch (e) {
-        logger.error(e.stack);
-        res.status(500).send({ message: "Something went wrong" });
+        res.status(401).send({ message: "Wrong authorization" });
     }
 };
 
@@ -46,7 +45,6 @@ export const userRegister = async (req: Request, res: Response) => {
             res.status(201).send({ message: "User registered" });
 
         } catch (e) {
-            logger.error(e.stack);
             res.status(500).send({ message: "Something went wrong" });
         }
     }
