@@ -3,8 +3,8 @@ import { Candidates } from '../../entities/candidates';
 import  { IAddCandidates, ICandidates } from '../helpers/interfaces';
 import { checkNumber, getCandidate } from '../helpers/helpers';
 
-export const getAllCandidates = async (req: Request, res: Response) => {
-
+export const getCandidates = async (req: Request, res: Response) => {
+    //Get Candidate by id
     if (Object.keys(req.query).length !== 0) {
         const queryId: string = req.query.id as string;
         const candidateId: number = parseInt(queryId);
@@ -20,7 +20,7 @@ export const getAllCandidates = async (req: Request, res: Response) => {
                 res.status(200).send(candidateData);
             }
         }
-
+    //Get list of all candidates
     } else { 
         try {
             const allCandidates: ICandidates[] = await Candidates.find();

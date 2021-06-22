@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getAllCandidates, addNewCandidate, deleteCandidate } from '../controllers/candidates';
+import { getCandidates, addNewCandidate, deleteCandidate } from '../controllers/candidates';
 import { dataValidation } from '../validators/validation';
 import { candidateSchema } from '../validators/schemas';
 import { validateJwt } from '../validators/jwt';
@@ -7,7 +7,7 @@ import { validateJwt } from '../validators/jwt';
 export const candidates: Router = Router();
 
 candidates.route('/candidates')
-    .get(validateJwt, getAllCandidates)
+    .get(validateJwt, getCandidates)
     .post(dataValidation(candidateSchema), validateJwt, addNewCandidate)
     .delete(validateJwt, deleteCandidate);
 
