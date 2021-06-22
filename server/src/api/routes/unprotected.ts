@@ -5,7 +5,6 @@ import { dataValidation } from '../validators/validation';
 
 export const unprotected: Router = Router();
 
-
 unprotected.get('/', default_page);
 
 unprotected.get('/login', userLogin);

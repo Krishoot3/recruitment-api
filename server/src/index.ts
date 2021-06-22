@@ -3,8 +3,6 @@ import { middleware } from './api/middleware/middleware';
 import { connection } from './config/database';
 import { logger } from './config/logger'
 
-
-
 const main = async () => {
 
     const app: Application = express();
